@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login Form</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+   <h2 class="text-3xl font-bold text-center">Login here</h2>
+
+   <div class="flex flex-col lg:flex-row justify-around mt-10">
+
+      <div class="w-[300px] py-5 px-5 border-2 border-blue-300 rounded-lg bg-gray-300">
+         <label>Email:</label> <br>
+         <input class="mt-2 outline-none" type="email" id="user__input"> <br>
+
+         <label>Password:</label> <br>
+         <input class="mt-2 outline-none" type="password" id="user__password"> <br>
+
+         <button
+            class="disabled:bg-slate-600 bg-purple-500 hover:bg-purple-400 duration-100 easy-out text-white px-5 py-1 rounded-lg mt-2"
+            id="submit">Submit</button>
+      </div>
+      <div class="bg-blue-100 rounded-lg w-[50%] text-center">
+         <h1 class="font-semibold">console</h1>
+         <hr class="w-full">
+         <p>Email: ami@gmail.com</p><br>
+         <p>Password: abc123</p>
+      </div>
+   </div>
+
+
+   <script src="js/app.js"></script>
+</body>
+
+</html>
