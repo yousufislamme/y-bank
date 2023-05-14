@@ -9,7 +9,7 @@ document.getElementById('submit').addEventListener('click', function () {
 
    // console.log(`Email: ${email} Password: ${password}`);
 
-   if (email === 'ami@gmail.com' && password === 'abc123') {
+   if (email === 'admin@gmail.com' && password === 'abc123') {
 
       window.location.href = 'bank.html';
 
