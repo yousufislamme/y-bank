@@ -11,20 +11,17 @@ document.getElementById('deposit__submit').addEventListener('click', function ()
    const currentBalance = parseFloat(currentBalanceSt.innerText);
 
    // calculate 
-   const totalDepositAmount = previewsDepositTotal + depositInput;
+   // const totalDepositAmount = previewsDepositTotal + depositInput;
    // 
-   const depositTotalCalculation = currentBalance + previewsDepositTotal;
+   const depositTotalCalculation = depositInput + previewsDepositTotal;
 
 
 
    // show deposit amount into display...
-   currentBalanceSt.innerText = depositTotalCalculation;
-   depositAmountSt.innerText = totalDepositAmount;
+   depositAmountSt.innerText = depositTotalCalculation;
 
-   console.log(depositTotalCalculation);
-   console.log(totalDepositAmount);
+   currentBalanceSt.innerText = currentBalance + depositInput;
 
    // clear deposit input
    depositInputSt.value = ''
-
 });
