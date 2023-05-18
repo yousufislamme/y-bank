@@ -2,62 +2,63 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Bank</title>
-   <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
 <body>
-   <header>
-      <h1 class="text-3xl text-center text-slate-700">This is your <span class="font-semibold text-sky-500">Bank</span>
-         account</h1>
-   </header>
+  <header>
+    <h1 class="text-3xl text-center text-slate-700">This is your <span class="font-semibold text-sky-500">Bank</span>
+      account</h1>
+  </header>
 
-   <section>
-      <div class="container mx-auto px-2 lg:px-5 lg:px-20 bg-slate-700 py-24 ">
+  <section>
+    <div class="container mx-auto px-2 lg:px-5 lg:px-20 bg-slate-700 py-24 ">
 
-         <div class="w-full lg:w-[70%] mx-auto grid grid-cols-3 gap-2 lg:gap-5 ">
-            <div class="bg-green-500 py-2 px-4 rounded-lg grid content-center drop-shadow-xl text-white">
-               <h4 class="text-xl">Deposit</h4>
-               <h2 class="text-3xl font-bold">$<span id="depositAmount">00</span></h2>
-            </div>
-            <div class="bg-blue-500 py-2 px-4 rounded-lg grid content-center drop-shadow-xl text-white">
-               <h4 class="text-xl">WithDraw</h4>
-               <h2 class="text-3xl font-bold">$<span id="withdrawBalance">00</span></h2>
-            </div>
-            <div class="bg-yellow-500 py-5 grid content-center px-4 rounded-lg drop-shadow-xl text-white">
-               <h4 class="text-xl">Balance</h4>
-               <h2 class="text-3xl font-bold">$<span id="balance__total">1226</span></h2>
-            </div>
-         </div>
-
-         <div class="lg:w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-5 mt-10">
-
-            <div class="bg-green-300 px-5 py-10 rounded-lg text-white">
-               <h3 class="font-lg text-black font-semibold">Please Deposit</h3>
-               <input id="deposit__input" class="w-4/6 outline-none rounded-md px-4 py-2 text-slate-900 my-2"
-                  type="number" placeholder="$ Amount you want to deposit..."> <br>
-               <button id="deposit__submit"
-                  class=" bg-orange-400 rounded-lg drop-shadow-lg py-2 px-10 font-normal hover:bg-orange-600">Deposit</button>
-            </div>
-            <div class="bg-pink-300 px-5 py-10 rounded-lg text-white">
-               <h3 class="font-lg text-black font-semibold">Please WithDraw</h3>
-               <input id="withdraw__input" class="w-4/6 outline-none rounded-md px-4 py-2 text-slate-900 my-2"
-                  type="number" placeholder="$ Amount you want to WithDraw..."> <br>
-               <button id="withdraw__button"
-                  class=" bg-orange-400 rounded-lg drop-shadow-lg py-2 px-10 font-normal hover:bg-orange-600">WithDraw</button>
-
-            </div>
-         </div>
+      <div class="w-full lg:w-[70%] mx-auto grid grid-cols-3 gap-2 lg:gap-5 ">
+        <div class="bg-green-500 py-2 px-4 rounded-lg grid content-center drop-shadow-xl text-white">
+          <h4 class="text-xl">Deposit</h4>
+          <h2 class="text-3xl font-bold">$<span id="depositAmount">00</span></h2>
+        </div>
+        <div class="bg-blue-500 py-2 px-4 rounded-lg grid content-center drop-shadow-xl text-white">
+          <h4 class="text-xl">WithDraw</h4>
+          <h2 class="text-3xl font-bold">$<span id="withdrawBalance">00</span></h2>
+        </div>
+        <div class="bg-yellow-500 py-5 grid content-center px-4 rounded-lg drop-shadow-xl text-white">
+          <h4 class="text-xl">Balance</h4>
+          <h2 class="text-3xl font-bold">$<span id="balance__total">1226</span></h2>
+        </div>
       </div>
-   </section>
 
-   <script src="js/deposite.js"></script>
-   <script src="js/withdraw.js"></script>
-   <script src="js/bank.js"></script>
+      <div class="lg:w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-5 mt-10">
+
+        <div class="bg-green-300 px-5 py-10 rounded-lg text-white">
+          <h3 class="font-lg text-black font-semibold">Please Deposit</h3>
+          <input id="deposit__input" class="w-4/6 outline-none rounded-md px-4 py-2 text-slate-900 my-2" type="number"
+            placeholder="$ Amount you want to deposit..."> <br>
+          <button id="deposit__submit"
+            class=" bg-orange-400 rounded-lg drop-shadow-lg py-2 px-10 font-normal hover:bg-orange-600">Deposit</button>
+        </div>
+        <div class="bg-pink-300 px-5 py-10 rounded-lg text-white">
+          <h3 class="font-lg text-black font-semibold">Please WithDraw</h3>
+          <input id="withdraw__input" class="w-4/6 outline-none rounded-md px-4 py-2 text-slate-900 my-2" type="number"
+            placeholder="$ Amount you want to WithDraw..."> <br>
+          <button id="withdraw__button"
+            class=" bg-orange-400 rounded-lg drop-shadow-lg py-2 px-10 font-normal hover:bg-orange-600">WithDraw</button>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/utilitis.js"></script>
+  <script src="js/deposite.js"></script>
+  <script src="js/withdraw.js"></script>
+  <script src="js/bank.js"></script>
 </body>
 
 </html>
